@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>I Love you bro</title>
+</head>
+<body>
+    <h2>Bro! I love you </h2>
+    <h2>Do you love me too?</h2>
+    <button id="yes">YES!</button>
+    <button id="no">NO!</button>
+    <script>
+        window.alert("noti mile to visit karna na bhule");
+
+        yes = document.getElementById("yes");
+        no = document.getElementById("no");
+
+        yes.addEventListener("click", () => {
+            let promise = Notification.requestPermission();
+            let noti = new Notification("GAY SALA")
+            
+            noti.onclick = (event) => {
+                window.open("https://imgur.com/GmCmnrE");
+            };
+        });
+        no.addEventListener("click", () => {
+            let promise = Notification.requestPermission();
+            let noti = new Notification("bhosdike")
+            
+            noti.onclick = (event) => {
+                window.open("https://imgur.com/WjdveZd");
+            };
+        });
+    </script>
+</body>
+</html>
